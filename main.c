@@ -20,5 +20,20 @@ int main()
     //retour
     printf("TEST - nombre entre est = %d\n", nombreEntre);
     printf("TEST - nombre mystere est = %d\n", nombreMystere);
+
+    //condition
+    if(nombreMystere > nombreEntre)
+    {
+        printf("C'est plus!\n\n");
+    }
+    else if(nombreMystere < nombreEntre)
+    {
+        printf("C'est moins!\n\n");
+    }
+    else
+    {
+        printf("Bravo, vous avez trouve le nombre mystere! :)\n\n ");
+    }
+
     return 0;
 }
