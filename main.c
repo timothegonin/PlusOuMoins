@@ -14,9 +14,14 @@ int main()
 
     int nombreEntre = 0;
 
+    printf("|===-=== . ===-=== . ===-===|\n");
+    printf("| JEUX - Trouvez le nombre  |\n");
+    printf("|===-=== . ===-=== . ===-===|\n\n");
+
+
     //LOOP
     do{
-        printf("Saisir un nombre : \n");
+        printf("Saisir un nombre entre 1 et 100 : \n");
         scanf("%d", &nombreEntre);
 
         //condition
@@ -30,10 +35,11 @@ int main()
         }
         else
         {
-            printf("Bravo, vous avez trouve le nombre mystere! :)\n\n ");
+            printf("\n\n|===-=== . ===-=== . ===-=== . ===-=== . ===-=== . ===-===|\n");
+            printf("|   FELICITATION, vous avez trouve le nombre mystere! :)  |\n");
+            printf("|===-=== . ===-=== . ===-=== . ===-=== . ===-=== . ===-===|\n");
         }
     } while (nombreEntre != nombreMystere);
-
 
     return 0;
 }
