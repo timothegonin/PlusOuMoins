@@ -13,27 +13,27 @@ int main()
     nombreMystere = (rand() % (MAX - MIN + 1)) + MIN;
 
     int nombreEntre = 0;
-    printf("Saisir un nombre : \n");
-    scanf("%d", &nombreEntre);
 
+    //LOOP
+    do{
+        printf("Saisir un nombre : \n");
+        scanf("%d", &nombreEntre);
 
-    //retour
-    printf("TEST - nombre entre est = %d\n", nombreEntre);
-    printf("TEST - nombre mystere est = %d\n", nombreMystere);
+        //condition
+        if(nombreMystere > nombreEntre)
+        {
+            printf("C'est plus!\n\n");
+        }
+        else if(nombreMystere < nombreEntre)
+        {
+            printf("C'est moins!\n\n");
+        }
+        else
+        {
+            printf("Bravo, vous avez trouve le nombre mystere! :)\n\n ");
+        }
+    } while (nombreEntre != nombreMystere);
 
-    //condition
-    if(nombreMystere > nombreEntre)
-    {
-        printf("C'est plus!\n\n");
-    }
-    else if(nombreMystere < nombreEntre)
-    {
-        printf("C'est moins!\n\n");
-    }
-    else
-    {
-        printf("Bravo, vous avez trouve le nombre mystere! :)\n\n ");
-    }
 
     return 0;
 }
